@@ -1,12 +1,15 @@
+/* IMPORTANDO FONTS PARA SEU PROJETO, APARTIR DO GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 
+/* DEIXANDO A MARGIN E PADDING DE SEU WINDOW ZERADO */
 * {
     padding: 0;
     margin: 0;
 
 }
 
+/* APLICANDO CONFIGURACOES GLOBAIS PARA SEU PROJETO */
 html, body {
     height: 100%;
 
@@ -15,6 +18,7 @@ html, body {
 
 }
 
+/* APLICANDO CONFIGURACOES GLOBAIS PARA O H1 */
 h1 {
     font-family: 'Amaranth', sans-serif;
     font-size: 44px;
@@ -23,6 +27,7 @@ h1 {
 
 }
 
+/* APLICANDO CONFIGURACOES GLOBAIS PARA O H2 */
 h2 {
     font-family: 'Amaranth', sans-serif;
     font-size: 28px;
@@ -31,6 +36,7 @@ h2 {
 
 }
 
+/* APLICANDO CONFIGURACOES GLOBAIS PARA O H3 */
 h3 {
     font-size: 14px;
     font-weight: 400;
@@ -39,11 +45,13 @@ h3 {
 
 }
 
+/* APLICANDO CONFIGURACOES GLOBAIS PARA O P */
 p {
     color: var(--text-default);
 
 }
 
+/* APLICANDO CONFIGURACOES GLOBAIS PARA O HR */
 hr {
     width: 85%;
     height: auto;
@@ -57,6 +65,7 @@ hr {
 
 }
 
+/* CRIANDO MACROS/VARIAVEIS PARA REUTILIZACAO DE CORES */
 :root {
     --text-default: #262626;
     --text-title: #303030;
@@ -71,14 +80,14 @@ hr {
 
 /* HEADER*/
 header {
-    padding: 5%;
+    padding: 5%; /* DEFINE O ESPACAMENTO INTERNO DO OBJETO */
 
-    width: 90%;
-    height: auto;
+    width: 90%; /* DEFINE A LARGURA DO OBJETO */
+    height: auto; /* DEFINE A ALTURA DO OBJETO*/
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* FAZ COM QUE OS OBJETOS DENTRO DELE FIQUEM FLEXIVEIS */
+    align-items: center; /* ALINHA TODOS OS OBJETOS DENTRO DELE NO CENTRO */
+    justify-content: space-between; /* INSERE ESPACAMENTOS ENTRE TODOS OS OBJETOS PARA QUE OCUPEM O OBJETO MAE INTEIRO */
 
 }
 
@@ -96,7 +105,7 @@ header #menu {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* ALINHA OS OBJETOS DENTRO DELE AO CENTRO */
 
 }
 
@@ -108,8 +117,8 @@ header #menu #search {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid var(--border-style-search);
-    border-radius: 3px 3px 3px 3px;
+    border: 1px solid var(--border-style-search); /* ESTILIZA AS BORDAS DE UM OBJETO */
+    border-radius: 3px 3px 3px 3px; /* ESTILIZA O RAIO DE UM OBEJTO(QUINAS) */
 
 }
 
@@ -134,7 +143,7 @@ header #menu #search #iconSearch {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--background-color-button);
+    background-color: var(--background-color-button); /* ADICIONA UMA COR DE FUNDO AO OBJETO */
     border-radius: 0px 3px 3px 0px;
 
 }
@@ -145,7 +154,7 @@ header #menu #search #iconSearch svg {
     width: 80%;
     height: auto;
 
-    color: var(--text-white);
+    color: var(--text-white); /* ADICIONA UMA COR AO OBJETO EM QUESTAO, SEJA ELE UMA IMAGEM/ICONE OU TEXTO */
 
 }
 
@@ -207,7 +216,7 @@ section nav ul {
 
     list-style: none;
 
-    font-size: 17px;
+    font-size: 17px; /* AJUSTA O TAMANHO DE UMA FONTE, PODEMOS USAR: px, %, em(pega o valor padrao(html, body), e utiliza ele como refencia para aumentar proporcionalmente a fonte), rem(pega o valor do objeto mae, e utiliza ele como refencia para aumentar proporcionalmente a fonte) */
 
     color: var(--text-default);
 
@@ -217,7 +226,7 @@ section nav ul a {
     width: auto;
     height: auto;
 
-    text-decoration: none;
+    text-decoration: none; /* RETIRA UMA FUNCIONALIDADE PADRAO DE ALGO, NESSE CASO, ESTA TIRANDO A FUNCIONALIDADE DE APARECER O SINAL DE LINK, AO PASSAR O MOUSE POR CIMA DE UM TEXTO */
 
     color: var(--text-default);
 
@@ -226,7 +235,7 @@ section nav ul a {
 section nav ul a li {
     padding: 16px 20px;
 
-    transition: color, .5s;
+    transition: color, .5s; /* CONFIGURAR UMA TRANSICAO PARA ALGUM TIPO DE VARIAVEL DE UM DETERMINADO OBJETO, PODEM SER PASSADOS VARIOS PARAMETROS DENTRO DE transition: color, background-color, width, .5s; */
 
 }
 
@@ -298,7 +307,7 @@ section #container #conteudo #postagem #dados button {
     justify-content: center;
 
     padding: 2%;
-    margin-top: 5%;
+    margin-top: 5%; /* AJUSTA A MARGE DE UM OBJETO, NESSE CASO O EFEITO E DE FORA PARA DENTRO, E O INVERSO DO padding */
 
     width: 40%;
     height: auto;
